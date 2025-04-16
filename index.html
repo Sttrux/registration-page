@@ -4,60 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
     <title>View</title>
+
 </head>
 
 <body>
 
     <main>
 
-
-        <div id="banner">
-            <div id="logo">
-                <img src="./Img/logo.png" alt="Odin Logo">
-                <p>ODIN</p>
+        <div id="container">
+            <div id="banner">
+                <div id="logo">
+                    <img src="./Img/logo.png" alt="Odin Logo">
+                    <p>ODIN</p>
+                </div>
             </div>
-            <img src="./Img/background.jpg" alt="Stars Image">
-        </div>
-        <div id="advertisement">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize
-                your deepest dreams. Sign up now to get started.</p>
-            <p>You <i>Know</i> you want top do </p>
+            <div id="right-column">
+
+                <div id="advise">
+                    <p>This is not a real online service! You know you need something like br this in your life to help
+                        you
+                        realize
+                        your deepest dreams. Sign up now to get started.</p>
+                    <p>You <i>Know</i> you want to. </p>
+
+
+                </div>
+
+
+
+                <div id="form-camp">
+                    <legend>Let's do this!</legend><br>
+                    <form id="create-account" action="#" method="post">
+
+                        <div class="form-group">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" required placeholder="Bob" name="first-name" id="first-name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" required placeholder="Wade" name="last-name" id="last-name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="number" required placeholder="098572901" name="phone-number" id="phone-number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input placeholder="example@odin.com" required type="email" name="email" id="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">PASSWORD</label>
+                            <input min="3" type="password" required name="password" id="password">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="repeat-password">REPEAT PASSWORD</label>
+                            <input type="password" required name="repeat-password" id="repeat-password">
+                        </div>
+
+                    </form>
+                </div>
+                <div id="form-btn">
+                    <button id="label-btn" form="create-account" type="submit">Create Account</button>
+
+
+                </div>
+
+                <div id="account">
+                    <p>Already have an account? <a href="https://www.youtube.com/watch?v=wUgV5DF3pUU">Log in</a>
+                    </p>
+                </div>
+            </div>
+
 
         </div>
 
-        <div id="form-camp"></div>
-        <legend>Let's do this!</legend>
-        <form action="#" method="post">
-
-
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name" id="first-name">
-
-            <label for="last-name">LAST NAME</label>
-            <input type="text" name="last-name" id="last-name">
-
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="number" name="phone-number" id="phone-number">
-
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
-
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password">
-
-            <label for="repeat-password">REPEAT PASSWORD</label>
-            <input type="password" name="repeat-password" id="repeat-password">
-
-            <button type="submit">Create Account</button>
-        </form>
-
-        <p>Already have an account? <a href="https://www.youtube.com/watch?v=wUgV5DF3pUU"><i>Log in</i></a></p>
-
-
-
-
-
+        </div>
 
 
 
